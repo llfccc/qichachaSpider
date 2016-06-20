@@ -1,2 +1,2 @@
 # qichachaSpider
-企查查的scrapy爬虫实践
+浼佹煡鏌ョ殑scrapy鐖櫕瀹炶返
