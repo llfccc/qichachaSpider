@@ -14,4 +14,6 @@ class DmozItem(scrapy.Item):
     year = scrapy.Field()
     href = scrapy.Field()
     registration_number = scrapy.Field()
+    annual = scrapy.Field()
+
 

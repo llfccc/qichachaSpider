@@ -44,22 +44,38 @@ class MySpider(scrapy.Spider):
         item = DmozItem()
 
         if href:
-            yield Request(href1, cookies=cookies, callback=self.parse_item, meta={'item': item,''})
-            yield Request(href2, cookies=cookies, callback=self.parse_item, meta={'item': item})
-        yield item
+            yield Request(href1, cookies=cookies, callback=self.parse_item, meta={'item': item,'category':'base'})
+            yield Request(href2, cookies=cookies, callback=self.parse_item, meta={'item': item,'category':'report'})
+        # print item
+        import json
+        item2=dict(item)
+        with open('f.txt', "a") as f:
+            f.write(str(item2))
+        print item2
+        # yield item
 
     def parse_item(self, response):
         item = DmozItem()
         # item['company_name'] = response.xpath('//*[@id="company-top"]/div/div[1]/span[2]/span[1]/text()').extract()[0]
-        # item['registration_number'] = response.xpath('//section[1]/div[2]/ul/li[1]/text()').extract()[0]
+        #
         output = response.body
 
         item = response.meta['item']
+
         item['company_name']='a'
-        f = open('f.txt', 'a')
-        f.write(output)
-        f.close()
+        category= response.meta['category']
+
+
+        if category=='base':
+            item['registration_number'] = response.xpath('//section[1]/div[2]/ul/li[1]/text()').extract()[0]
+
+        if category == 'report':
+            item['annual'] = response.xpath('//section[1]/div[1]/ul/li[1]/a/span/text()').extract()[0]
+
+        return item
+        # f = open('f.txt', 'a')
+        # f.write(output)
+        # f.close()
         # item['artificial_person'] = response.xpath('//*[@id="searchlist"]/ul/a[1]/span[2]/small[1]/text()[2]').extract()[0]
         # item['year'] = response.xpath('//*[@id="searchlist"]/ul/a[1]/span[2]/small[1]/text()[3]').extract()[0]
-        #
-        yield item
+
