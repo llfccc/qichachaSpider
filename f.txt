@@ -1,380 +1,546 @@
-  <div class="report_info"></div>    
-
-
-<style>
-
-#myTab>li {
-    position: relative;
-    display: inline-block;
- } 
- #myTab li a{
-    padding-top: 15px;
-    padding-bottom: 15px;
-	font-weight:600;
-}
-#loadReport{
-   text-align:center;
-   margin-top:100px;
-   display:none;
-}
- </style>		
-	     
-		   <section class="panel pos-rlt  b-a report_info">
-			  <div class="panel-heading b-b"> 
-				 <ul  class="nav nav-tabs" id="myTab">
-											<li class="active">
-						  <a   href="#2015年度报告" data-toggle="tab">
-							 <span class=" font-15 text-dark"> 2015年度报告</span>
-						  </a>
-						</li>		 		    
-											<li >
-						  <a   href="#2014年度报告" data-toggle="tab">
-							 <span class=" font-15 text-dark"> 2014年度报告</span>
-						  </a>
-						</li>		 		    
-											<li >
-						  <a   href="#2013年度报告" data-toggle="tab">
-							 <span class=" font-15 text-dark"> 2013年度报告</span>
-						  </a>
-						</li>		 		    
-						 
-				  </ul>					
-			  </div> 
-			  
-             <div class="panel-body tab-content">
-		        			         <div class="tab-pane fade in active" id="2015年度报告" > 
- 							   <table class="table table-bordered" style="margin-top:15px;">
-									<tbody>
-									<tr> 
-									  <td colspan="4"   class="left-title font-bold text-center font-15">企业基本信息</td>
-									</tr>
-									<tr>
-									 <td class="left-title" width="20%">注册号</td>
-									 <td width="30%">330106000119806</td>
-									 <td class="left-title" width="20%">企业经营状态</td> 
-									 <td width="30%">开业</td>
-								    </tr>  
-						            <tr>
-									 <td class="left-title" width="20%">企业联系电话</td>
-									 <td width="25%">85115021</td>
-									 <td class="left-title" width="20%">电子邮箱</td>
-									 <td><a href="mailto:" style="color:#555;"></a></td>
-								    </tr>	 
-						            <tr>
-									 <td class="left-title" width="20%">邮政编码</td>
-									 <td width="25%">310007</td>
-									 <td class="left-title" width="20%">从业人数	</td>
-									 <td width="25%">企业选择不公示</td>								 	
-								    </tr>		
-									<tr >
-									 <td class="left-title" width="20%">住所</td>
-									 <td colspan="3">西湖区留下街道西穆坞村</td>	
-                                    </tr>	
-						            <tr>
-                                     <td class="left-title" width="20%">有限责任公司本年度是否发生股东股权转让</td>
-									 <td>否</td>								 
-									 <td class="left-title" width="20%">企业是否有投资信息或购买其他公司股权</td>
-									 <td colspan="3">无</td>
-								    </tr>	
-                                    <tr>									
-								   </tbody>
-							  </table>							   
+ 				 
+	 <section class="panel b-a base_info">
+	   <div class="panel-heading b-b">
+ 		 <span class="font-bold font-15 text-dark"> 基本信息</span>
+	   </div> 
+	   <div class="panel-body text-sm"> 
+			  <ul class="company-base">
+				  					  
+				  					<li><label>注册号：  </label>330106000119806</li>
+				  				  					<li><label style="width:105px;">组织机构代码：  </label>73152651-6</li>
+				  			 		  
+				  					  <li><label>经营状态：</label>存续</li>
+				  				   
+					  <li><label>公司类型：</label>其他有限责任公司</li>
+				  				  					  <li><label>成立日期：</label>2001-07-26</li>
+				  				  					  <li><label>法定代表：</label><a href="/search?key=胡勇平&index=4"  class="text-primary">胡勇平</a>
+					     <a  onclick="findRelation('胡勇平')">  
+					     <span class="find-btn" style="margin-top:-5px;"><i class="fa   fa-plus-circle"></i></span>
+						 </a>					  
+					  </li>
+				  				  					  <li><label>注册资本：</label>100 万元人民币</li>
+				  				  					  <li><label>营业期限：</label>2001-07-26 至 2021-07-25</li>
+				  				  				  <li><label>登记机关：</label>杭州市西湖区工商行政管理局</li> 
+				  				  				  <li><label>发照日期：</label>2010-01-19</li>
+				  				   
 				  
-						  						   						  <table class="table table-bordered">
-							  <tbody>
-						        <tr>
-									  <td colspan="7" class="left-title" style="text-align:center;font-size:14px;font-weight:700;">发起人及出资信息</td>
-								</tr>
-								<tr>
-								  <td class="left-title">发起人</td>
-								  <td class="left-title">认缴出资额（万元）</td>
-								  <td class="left-title">认缴出资时间</td>
-								  <td class="left-title">认缴出资方式	</td>
-								  <td class="left-title">实缴出资额（万元）</td>
-								  <td class="left-title">出资时间</td> 
-								  <td class="left-title">出资方式</td>
-								</tr>							  
-							    								<tr>
-								  <td>浙江省地矿科技有限公司</td>
-								  <td>70</td>
-								  <td>2001年07月26日</td> 
-								  <td>货币</td>
-								  <td>70</td>
-								  <td>2001年07月26日</td> 
-								  <td>货币</td> 
-								</tr>
-																<tr>
-								  <td>浙江省地质矿产研究所</td>
-								  <td>30</td>
-								  <td>2001年07月26日</td> 
-								  <td>股权</td>
-								  <td>30</td>
-								  <td>2001年07月26日</td> 
-								  <td>股权</td> 
-								</tr>
-															  </tbody>
-						   </table>	
-						   						  						   						  <table class="table table-bordered">
-						    <tr>
-									  <td colspan="4"  class="left-title font-bold text-center font-15">企业资产状况信息</td>
-							</tr>						  
-							 <tr>
-								  <td class="left-title" width="20%">资产总额</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title" width="20%">所有者权益合计</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title" >营业总收入	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">利润总额	</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title">营业总收入中主营业务收入	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">净利润	</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title">纳税总额	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">负债总额	</td> 
-								  <td>企业选择不公示</td>							  
-							 </tr>							 
-						   </table>		
-						   						   
-						  						   
-						  						   
-						  						   
-						  			   
-                    </div>	
-               			         <div class="tab-pane fade in " id="2014年度报告" > 
- 							   <table class="table table-bordered" style="margin-top:15px;">
-									<tbody>
-									<tr> 
-									  <td colspan="4"   class="left-title font-bold text-center font-15">企业基本信息</td>
-									</tr>
-									<tr>
-									 <td class="left-title" width="20%">注册号</td>
-									 <td width="30%">330106000119806</td>
-									 <td class="left-title" width="20%">企业经营状态</td> 
-									 <td width="30%">开业</td>
-								    </tr>  
-						            <tr>
-									 <td class="left-title" width="20%">企业联系电话</td>
-									 <td width="25%">85115021</td>
-									 <td class="left-title" width="20%">电子邮箱</td>
-									 <td><a href="mailto:" style="color:#555;"></a></td>
-								    </tr>	 
-						            <tr>
-									 <td class="left-title" width="20%">邮政编码</td>
-									 <td width="25%">310007</td>
-									 <td class="left-title" width="20%">从业人数	</td>
-									 <td width="25%">企业选择不公示</td>								 	
-								    </tr>		
-									<tr >
-									 <td class="left-title" width="20%">住所</td>
-									 <td colspan="3">西湖区留下街道西穆坞村</td>	
-                                    </tr>	
-						            <tr>
-                                     <td class="left-title" width="20%">有限责任公司本年度是否发生股东股权转让</td>
-									 <td>否</td>								 
-									 <td class="left-title" width="20%">企业是否有投资信息或购买其他公司股权</td>
-									 <td colspan="3">无</td>
-								    </tr>	
-                                    <tr>									
-								   </tbody>
-							  </table>							   
 				  
-						  						   						  <table class="table table-bordered">
-							  <tbody>
-						        <tr>
-									  <td colspan="7" class="left-title" style="text-align:center;font-size:14px;font-weight:700;">发起人及出资信息</td>
-								</tr>
-								<tr>
-								  <td class="left-title">发起人</td>
-								  <td class="left-title">认缴出资额（万元）</td>
-								  <td class="left-title">认缴出资时间</td>
-								  <td class="left-title">认缴出资方式	</td>
-								  <td class="left-title">实缴出资额（万元）</td>
-								  <td class="left-title">出资时间</td> 
-								  <td class="left-title">出资方式</td>
-								</tr>							  
-							    								<tr>
-								  <td>浙江省地质矿产研究所</td>
-								  <td>30</td>
-								  <td>2001年07月26日</td> 
-								  <td>股权</td>
-								  <td>30</td>
-								  <td>2001年07月26日</td> 
-								  <td>股权</td> 
-								</tr>
-																<tr>
-								  <td>浙江省地矿科技有限公司</td>
-								  <td>70</td>
-								  <td>2001年07月26日</td> 
-								  <td>货币</td>
-								  <td>70</td>
-								  <td>2001年07月26日</td> 
-								  <td>货币</td> 
-								</tr>
-															  </tbody>
-						   </table>	
-						   						  						   						  <table class="table table-bordered">
-						    <tr>
-									  <td colspan="4"  class="left-title font-bold text-center font-15">企业资产状况信息</td>
-							</tr>						  
-							 <tr>
-								  <td class="left-title" width="20%">资产总额</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title" width="20%">所有者权益合计</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title" >营业总收入	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">利润总额	</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title">营业总收入中主营业务收入	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">净利润	</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title">纳税总额	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">负债总额	</td> 
-								  <td>企业选择不公示</td>							  
-							 </tr>							 
-						   </table>		
-						   						   
-						  						   
-						  						   
-						  						   
-						  			   
-                    </div>	
-               			         <div class="tab-pane fade in " id="2013年度报告" > 
- 							   <table class="table table-bordered" style="margin-top:15px;">
-									<tbody>
-									<tr> 
-									  <td colspan="4"   class="left-title font-bold text-center font-15">企业基本信息</td>
-									</tr>
-									<tr>
-									 <td class="left-title" width="20%">注册号</td>
-									 <td width="30%">330106000119806</td>
-									 <td class="left-title" width="20%">企业经营状态</td> 
-									 <td width="30%">开业</td>
-								    </tr>  
-						            <tr>
-									 <td class="left-title" width="20%">企业联系电话</td>
-									 <td width="25%">85115021</td>
-									 <td class="left-title" width="20%">电子邮箱</td>
-									 <td><a href="mailto:" style="color:#555;"></a></td>
-								    </tr>	 
-						            <tr>
-									 <td class="left-title" width="20%">邮政编码</td>
-									 <td width="25%">310007</td>
-									 <td class="left-title" width="20%">从业人数	</td>
-									 <td width="25%">企业选择不公示</td>								 	
-								    </tr>		
-									<tr >
-									 <td class="left-title" width="20%">住所</td>
-									 <td colspan="3">西湖区留下街道西穆坞村</td>	
-                                    </tr>	
-						            <tr>
-                                     <td class="left-title" width="20%">有限责任公司本年度是否发生股东股权转让</td>
-									 <td>否</td>								 
-									 <td class="left-title" width="20%">企业是否有投资信息或购买其他公司股权</td>
-									 <td colspan="3">无</td>
-								    </tr>	
-                                    <tr>									
-								   </tbody>
-							  </table>							   
+				  				  <li>
+					  <label>所属行业：</label>
+					  采掘业/冶炼
+				  </li>
 				  
-						  						   						  <table class="table table-bordered">
-							  <tbody>
-						        <tr>
-									  <td colspan="7" class="left-title" style="text-align:center;font-size:14px;font-weight:700;">发起人及出资信息</td>
-								</tr>
-								<tr>
-								  <td class="left-title">发起人</td>
-								  <td class="left-title">认缴出资额（万元）</td>
-								  <td class="left-title">认缴出资时间</td>
-								  <td class="left-title">认缴出资方式	</td>
-								  <td class="left-title">实缴出资额（万元）</td>
-								  <td class="left-title">出资时间</td> 
-								  <td class="left-title">出资方式</td>
-								</tr>							  
-							    								<tr>
-								  <td>浙江省地矿科技有限公司</td>
-								  <td>70</td>
-								  <td>2001年07月26日</td> 
-								  <td>货币</td>
-								  <td>70</td>
-								  <td>2001年07月26日</td> 
-								  <td>货币</td> 
-								</tr>
-																<tr>
-								  <td>浙江省地质矿产研究所</td>
-								  <td>30</td>
-								  <td>2001年07月26日</td> 
-								  <td>股权</td>
-								  <td>30</td>
-								  <td>2001年07月26日</td> 
-								  <td>股权</td> 
-								</tr>
-															  </tbody>
-						   </table>	
-						   						  						   						  <table class="table table-bordered">
-						    <tr>
-									  <td colspan="4"  class="left-title font-bold text-center font-15">企业资产状况信息</td>
-							</tr>						  
-							 <tr>
-								  <td class="left-title" width="20%">资产总额</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title" width="20%">所有者权益合计</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title" >营业总收入	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">利润总额	</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title">营业总收入中主营业务收入	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">净利润	</td>
-								  <td>企业选择不公示</td>							  
-							 </tr>
-							 <tr>
-								  <td class="left-title">纳税总额	</td>
-								  <td>企业选择不公示</td>
-								  <td class="left-title">负债总额	</td> 
-								  <td>企业选择不公示</td>							  
-							 </tr>							 
-						   </table>		
-						   						   
-						  						   
-						  						   
-						  						   
-						  			   
-                    </div>	
-               			  </div>
-			</section> 
+                    
+                   
 
-			
-						
-			
-			
-			
- 
+                  				   <li   class="comp-gen-txarea" > <label>企业地址： </label>西湖区留下街道西穆坞村</li>
+				  				  
+				  				  <li class="comp-gen-txarea">
+					  <label>经营范围：</label>
+					  许可经营项目：制造、加工：锂皂石（在《杭州市污染物排放许可证》有效期限内经营）。&nbsp; 
+						一般经营项目：服务：锂皂石技术咨询。 
+				   </li>
+				  	  
+			 </ul>
+	  </div>				  
+	</section>
+
+   	
+   			   
+   <section class="panel b-a clear">
+	    <div class="panel-heading b-b">
+		 <span class="font-bold font-15 text-dark"> 股东信息</span>		
+		<span class="badge btn-success">2</span>					
+	    </div>	   
+	    <div class="clear  m-b"></div> 	  
+					<div class="col-md-6">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				
+				  <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('浙江省地矿科技有限公司')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				  </a>     
+				  <div class="clear"> 
+				    
+ 				      <a href="/firm_CN_fe5ec8ee59f1c0ca8c43a13338317e36.shtml" target="_blank"   class="text-lg">浙江省地矿科技有限公司</a> 	
+                    				  
+				   <small class="text-muted clear text-ellipsis m-t-xs m-b-xs"> 企业法人</small>
+				    					
+										
+				    					
+							  
+ 				  </div>    
+				</div> 
+			  </section> 
+            </div> 
+	       	 			
+					<div class="col-md-6">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				
+				  <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('浙江省地质矿产研究所')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				  </a>     
+				  <div class="clear"> 
+				     
+				       <a href="/search?key=浙江省地质矿产研究所&index=4"  target="_blank"  class="text-lg">浙江省地质矿产研究所</a> 		
+					 				  
+				   <small class="text-muted clear text-ellipsis m-t-xs m-b-xs"> 企业法人</small>
+				    					
+										
+				    					
+							  
+ 				  </div>    
+				</div> 
+			  </section> 
+            </div> 
+	        		 
+				<div class="col-md-12"> </div> 
+				 			
+			   
+	</section>
+	      <section class="panel b-a clear">
+	  <div class="panel-heading b-b">
+   		 <span class="font-bold font-15 text-dark"> 主要人员</span>				
+		<span class="badge btn-success">2</span>					
+	  </div>
+	  
+		<div class="clear  m-b"></div> 
+		
+					<div class="col-md-3">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				   <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('胡勇平')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				   </a>   
+				  <div class="clear">
+                  					  
+				      <a href="/search?key=胡勇平&index=6" target="_blank" class="text-lg">胡勇平</a>
+				  					<small class="block text-muted">执行董事兼总经理</small>  
+ 				  </div>   
+				</div> 
+			  </section> 
+            </div>  	
+	       	 	 			
+					<div class="col-md-3">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				   <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('周兰芳')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				   </a>   
+				  <div class="clear">
+                  					  
+				      <a href="/search?key=周兰芳&index=6" target="_blank" class="text-lg">周兰芳</a>
+				  					<small class="block text-muted">监事</small>  
+ 				  </div>   
+				</div> 
+			  </section> 
+            </div>  	
+	       	 	 			
+		 
+	</section>
 	 
+	
 	 
-  				 
+	 	 	 <section class="panel b-a clear">
+	  <div class="panel-heading b-b">
+    	<span class="font-bold font-15 text-dark"> 变更记录</span>						 
+		<span class="badge btn-success">2</span>				  					 
+	  </div> 
+	  <div class="clear  m-b"></div>  		 
+	  		<div class="col-md-12">
+		 <section class="panel panel-default">
+			<div class="panel-body">
+			   <span class="pull-left">
+				 <button class="btn btn-sm btn-num">1</button>
+			  </span>    
+			  <div class="clear">
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更项目：
+						<span class="black-6">住所(营业场所、地址)变更</span>
+						</small> 
+					</div> 	 					
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更日期：
+						<span class="black-6">2010-01-19</span>
+						</small>
+					</div> 						
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更前：
+						<span class="black-6">住所: 杭州市西湖区留下镇西穆坞村; 
+法定代表人(负责人): 陈启强; 
+一般经营项目: 技术咨询、生产：锂皂石; 
+注册号: 3301001004197; 
+营业期限: 2001-7-26 至 2010-4-17; 
+组织机构:  陈启强 职务: 董事长; 陈启强 职务: 董事; 龚展国 职务: 董事; 胡勇平 职务: 经理; 胡勇平 职务: 董事; 王中兴 职务: 监事; 赵光弟 职务: 监事;</span>
+						</small>
+					</div>	
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更后：
+						<span class="black-6">住所: 西湖区留下街道西穆坞村; 
+法定代表人(负责人): 胡勇平; 
+一般经营项目: 服务：锂皂石技术咨询。; 
+注册号: ********; 
+营业期限: 2001-7-26 至 2021-7-25; 
+组织机构:  胡勇平 职务: 执行董事兼总经理; 周兰芳 职务: 监事;</span>
+						</small>
+					</div>  					
+			  </div>    
+			</div>   
+		  </section>  
+		</div>  			   
+	   		<div class="col-md-12">
+		 <section class="panel panel-default">
+			<div class="panel-body">
+			   <span class="pull-left">
+				 <button class="btn btn-sm btn-num">2</button>
+			  </span>    
+			  <div class="clear">
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更项目：
+						<span class="black-6">投资人(股权)变更</span>
+						</small> 
+					</div> 	 					
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更日期：
+						<span class="black-6">2005-04-07</span>
+						</small>
+					</div> 						
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更前：
+						<span class="black-6">股东:浙江省地矿科技有限公司、杭州科利贸易公司</span>
+						</small>
+					</div>	
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更后：
+						<span class="black-6">股东:浙江省地矿科技有限公司、浙江省地质研究所</span>
+						</small>
+					</div>  					
+			  </div>    
+			</div>   
+		  </section>  
+		</div>  			   
+	    
+	   
+	   
+	</section>				
+		 	  
+		 <section class="panel b-a">
+		  <div class="panel-heading b-b">
+			   <span class="font-bold font-15 text-dark">公司简介</span>						 				   
+		  </div> 
+		  <div class="panel-body base-black m-b">
+			 			 属有限公司 企业资金: 50-100万元
+		  </div>
+		</section>				
+	
+
+	
+	
+ 	 <section class="panel b-a" id="commentlist">
+		<div class="panel-heading b-b">
+     	   <span class="font-bold font-15 text-dark">点评动态</span>	
+            			
+		</div> 		
+		<section class="comment-list block m-l m-r m-t">
+           				 <div class="noresult  no-search"> 
+				     <p class="noface"><img src="/material/theme/chacha/cms/img/nodata.png" style="width:80px;"/></p>
+ 					 <p style="font-size:14px;color:#9e9e9e;margin-bottom:27px;">咦，咋没人评论，赶快占个座吧 :-D</p>
+ 				 </div> 
+
+            		 
+	     </section>  	  
+		<footer class="panel-footer"> 
+ 		  <article class="chat-item" id="chat-form">
+			<a class="pull-left thumb-sm avatar" href="/u_0cfd871c39850373f7e4d594d4b3b843">
+				<img src="http://co-image.qichacha.com/upload/chacha/img/face/0_s.jpg"  alt="vxyduo"  class="img-circle">
+            </a>
+			<section class="chat-body"> 
+			  <form>
+			  	  <textarea class="form-control no-border" rows="3" placeholder="说说你对公司的看法..." id="commentcontent"></textarea>
+				  <input type="hidden" name="type" value="1">
+				  <input type="hidden" name="to" value="" id="to">
+				  <input type="hidden" name="email" value="" id="companyemail" >	
+			  </form> 				  
+              <button class="btn btn-success pull-right  m-t" onclick="postComment()">发布评论</button> 
+		      <div class="clearfix"></div>			  
+			</section> 			
+		  </article>
+		</footer>	   
+	  
+	</section>	 
+ 				 
+	 <section class="panel b-a base_info">
+	   <div class="panel-heading b-b">
+ 		 <span class="font-bold font-15 text-dark"> 基本信息</span>
+	   </div> 
+	   <div class="panel-body text-sm"> 
+			  <ul class="company-base">
+				  					  
+				  					<li><label>注册号：  </label>330106000119806</li>
+				  				  					<li><label style="width:105px;">组织机构代码：  </label>73152651-6</li>
+				  			 		  
+				  					  <li><label>经营状态：</label>存续</li>
+				  				   
+					  <li><label>公司类型：</label>其他有限责任公司</li>
+				  				  					  <li><label>成立日期：</label>2001-07-26</li>
+				  				  					  <li><label>法定代表：</label><a href="/search?key=胡勇平&index=4"  class="text-primary">胡勇平</a>
+					     <a  onclick="findRelation('胡勇平')">  
+					     <span class="find-btn" style="margin-top:-5px;"><i class="fa   fa-plus-circle"></i></span>
+						 </a>					  
+					  </li>
+				  				  					  <li><label>注册资本：</label>100 万元人民币</li>
+				  				  					  <li><label>营业期限：</label>2001-07-26 至 2021-07-25</li>
+				  				  				  <li><label>登记机关：</label>杭州市西湖区工商行政管理局</li> 
+				  				  				  <li><label>发照日期：</label>2010-01-19</li>
+				  				   
+				  
+				  
+				  				  <li>
+					  <label>所属行业：</label>
+					  采掘业/冶炼
+				  </li>
+				  
+                    
+                   
+
+                  				   <li   class="comp-gen-txarea" > <label>企业地址： </label>西湖区留下街道西穆坞村</li>
+				  				  
+				  				  <li class="comp-gen-txarea">
+					  <label>经营范围：</label>
+					  许可经营项目：制造、加工：锂皂石（在《杭州市污染物排放许可证》有效期限内经营）。&nbsp; 
+						一般经营项目：服务：锂皂石技术咨询。 
+				   </li>
+				  	  
+			 </ul>
+	  </div>				  
+	</section>
+
+   	
+   			   
+   <section class="panel b-a clear">
+	    <div class="panel-heading b-b">
+		 <span class="font-bold font-15 text-dark"> 股东信息</span>		
+		<span class="badge btn-success">2</span>					
+	    </div>	   
+	    <div class="clear  m-b"></div> 	  
+					<div class="col-md-6">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				
+				  <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('浙江省地矿科技有限公司')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				  </a>     
+				  <div class="clear"> 
+				    
+ 				      <a href="/firm_CN_fe5ec8ee59f1c0ca8c43a13338317e36.shtml" target="_blank"   class="text-lg">浙江省地矿科技有限公司</a> 	
+                    				  
+				   <small class="text-muted clear text-ellipsis m-t-xs m-b-xs"> 企业法人</small>
+				    					
+										
+				    					
+							  
+ 				  </div>    
+				</div> 
+			  </section> 
+            </div> 
+	       	 			
+					<div class="col-md-6">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				
+				  <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('浙江省地质矿产研究所')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				  </a>     
+				  <div class="clear"> 
+				     
+				       <a href="/search?key=浙江省地质矿产研究所&index=4"  target="_blank"  class="text-lg">浙江省地质矿产研究所</a> 		
+					 				  
+				   <small class="text-muted clear text-ellipsis m-t-xs m-b-xs"> 企业法人</small>
+				    					
+										
+				    					
+							  
+ 				  </div>    
+				</div> 
+			  </section> 
+            </div> 
+	        		 
+				<div class="col-md-12"> </div> 
+				 			
+			   
+	</section>
+	      <section class="panel b-a clear">
+	  <div class="panel-heading b-b">
+   		 <span class="font-bold font-15 text-dark"> 主要人员</span>				
+		<span class="badge btn-success">2</span>					
+	  </div>
+	  
+		<div class="clear  m-b"></div> 
+		
+					<div class="col-md-3">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				   <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('胡勇平')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				   </a>   
+				  <div class="clear">
+                  					  
+				      <a href="/search?key=胡勇平&index=6" target="_blank" class="text-lg">胡勇平</a>
+				  					<small class="block text-muted">执行董事兼总经理</small>  
+ 				  </div>   
+				</div> 
+			  </section> 
+            </div>  	
+	       	 	 			
+					<div class="col-md-3">
+			 <section class="panel panel-default">
+				<div class="panel-body">
+				   <a class="thumb-sm pull-right m-l m-t-xs" onclick="findRelation('周兰芳')">  
+					<span class="find-btn"><i class="fa   fa-plus-circle"></i></span> 		   			   
+ 				   </a>   
+				  <div class="clear">
+                  					  
+				      <a href="/search?key=周兰芳&index=6" target="_blank" class="text-lg">周兰芳</a>
+				  					<small class="block text-muted">监事</small>  
+ 				  </div>   
+				</div> 
+			  </section> 
+            </div>  	
+	       	 	 			
+		 
+	</section>
+	 
+	
+	 
+	 	 	 <section class="panel b-a clear">
+	  <div class="panel-heading b-b">
+    	<span class="font-bold font-15 text-dark"> 变更记录</span>						 
+		<span class="badge btn-success">2</span>				  					 
+	  </div> 
+	  <div class="clear  m-b"></div>  		 
+	  		<div class="col-md-12">
+		 <section class="panel panel-default">
+			<div class="panel-body">
+			   <span class="pull-left">
+				 <button class="btn btn-sm btn-num">1</button>
+			  </span>    
+			  <div class="clear">
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更项目：
+						<span class="black-6">住所(营业场所、地址)变更</span>
+						</small> 
+					</div> 	 					
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更日期：
+						<span class="black-6">2010-01-19</span>
+						</small>
+					</div> 						
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更前：
+						<span class="black-6">住所: 杭州市西湖区留下镇西穆坞村; 
+法定代表人(负责人): 陈启强; 
+一般经营项目: 技术咨询、生产：锂皂石; 
+注册号: 3301001004197; 
+营业期限: 2001-7-26 至 2010-4-17; 
+组织机构:  陈启强 职务: 董事长; 陈启强 职务: 董事; 龚展国 职务: 董事; 胡勇平 职务: 经理; 胡勇平 职务: 董事; 王中兴 职务: 监事; 赵光弟 职务: 监事;</span>
+						</small>
+					</div>	
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更后：
+						<span class="black-6">住所: 西湖区留下街道西穆坞村; 
+法定代表人(负责人): 胡勇平; 
+一般经营项目: 服务：锂皂石技术咨询。; 
+注册号: ********; 
+营业期限: 2001-7-26 至 2021-7-25; 
+组织机构:  胡勇平 职务: 执行董事兼总经理; 周兰芳 职务: 监事;</span>
+						</small>
+					</div>  					
+			  </div>    
+			</div>   
+		  </section>  
+		</div>  			   
+	   		<div class="col-md-12">
+		 <section class="panel panel-default">
+			<div class="panel-body">
+			   <span class="pull-left">
+				 <button class="btn btn-sm btn-num">2</button>
+			  </span>    
+			  <div class="clear">
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更项目：
+						<span class="black-6">投资人(股权)变更</span>
+						</small> 
+					</div> 	 					
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更日期：
+						<span class="black-6">2005-04-07</span>
+						</small>
+					</div> 						
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更前：
+						<span class="black-6">股东:浙江省地矿科技有限公司、杭州科利贸易公司</span>
+						</small>
+					</div>	
+                    <div class="col-md-6">
+					    <small class="block text-muted text-md">变更后：
+						<span class="black-6">股东:浙江省地矿科技有限公司、浙江省地质研究所</span>
+						</small>
+					</div>  					
+			  </div>    
+			</div>   
+		  </section>  
+		</div>  			   
+	    
+	   
+	   
+	</section>				
+		 	  
+		 <section class="panel b-a">
+		  <div class="panel-heading b-b">
+			   <span class="font-bold font-15 text-dark">公司简介</span>						 				   
+		  </div> 
+		  <div class="panel-body base-black m-b">
+			 			 属有限公司 企业资金: 50-100万元
+		  </div>
+		</section>				
+	
+
+	
+	
+ 	 <section class="panel b-a" id="commentlist">
+		<div class="panel-heading b-b">
+     	   <span class="font-bold font-15 text-dark">点评动态</span>	
+            			
+		</div> 		
+		<section class="comment-list block m-l m-r m-t">
+           				 <div class="noresult  no-search"> 
+				     <p class="noface"><img src="/material/theme/chacha/cms/img/nodata.png" style="width:80px;"/></p>
+ 					 <p style="font-size:14px;color:#9e9e9e;margin-bottom:27px;">咦，咋没人评论，赶快占个座吧 :-D</p>
+ 				 </div> 
+
+            		 
+	     </section>  	  
+		<footer class="panel-footer"> 
+ 		  <article class="chat-item" id="chat-form">
+			<a class="pull-left thumb-sm avatar" href="/u_0cfd871c39850373f7e4d594d4b3b843">
+				<img src="http://co-image.qichacha.com/upload/chacha/img/face/0_s.jpg"  alt="vxyduo"  class="img-circle">
+            </a>
+			<section class="chat-body"> 
+			  <form>
+			  	  <textarea class="form-control no-border" rows="3" placeholder="说说你对公司的看法..." id="commentcontent"></textarea>
+				  <input type="hidden" name="type" value="1">
+				  <input type="hidden" name="to" value="" id="to">
+				  <input type="hidden" name="email" value="" id="companyemail" >	
+			  </form> 				  
+              <button class="btn btn-success pull-right  m-t" onclick="postComment()">发布评论</button> 
+		      <div class="clearfix"></div>			  
+			</section> 			
+		  </article>
+		</footer>	   
+	  
+	</section>	 
+ 				 
 	 <section class="panel b-a base_info">
 	   <div class="panel-heading b-b">
  		 <span class="font-bold font-15 text-dark"> 基本信息</span>
