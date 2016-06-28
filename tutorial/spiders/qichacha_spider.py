@@ -6,8 +6,7 @@ import sys, time
 
 import scrapy
 from scrapy.http import Request
-from ..items import DmozItem
-
+from ..items import QichachaItem
 
 class MySpider(scrapy.Spider):
     name = 'qichacha'
@@ -21,9 +20,6 @@ class MySpider(scrapy.Spider):
             url_head = "http://www.qichacha.com/search?key="
             for line in file_object:
                 self.start_urls.append(url_head + line)
-
-            # for url in self.start_urls:
-            #     yield self.make_requests_from_url(url)
 
             for url in self.start_urls:
                 yield Request(url)
@@ -45,22 +41,25 @@ class MySpider(scrapy.Spider):
         if href:
             yield Request(href_base, cookies=cookies, callback=self.parse_item, meta={'item': item, 'category': 'base'})
             time.sleep(3)
-            yield Request(href_report, cookies=cookies, callback=self.parse_item, meta={'item': item, 'category': 'report'})
-        print (item)
+            yield Request(href_report, cookies=cookies, callback=self.parse_item,
+                          meta={'item': item, 'category': 'report'})
 
     def parse_item(self, response):
+        item = DmozItem()
+        # item['company_name'] = response.xpath('//*[@id="company-top"]/div/div[1]/span[2]/span[1]/text()').extract()[0]
+        output = response.body
         item = response.meta['item']
+        item['company_name'] = 'a'
         category = response.meta['category']
+
         if category == 'base':
             item['registration_number'] = response.xpath('//section[1]/div[2]/ul/li[1]/text()').extract()[0]
-            yield item
         if category == 'report':
-            item['year'] = response.xpath('//section[1]/div[1]/ul[1]/li[1]/a/span/text()').extract()[0]
+            item['annual'] = response.xpath('//section[1]/div[1]/ul/li[1]/a/span/text()').extract()[0]
 
-
-
-        #
-        # output = response.body
+        yield item
         # f = open('f.txt', 'a')
         # f.write(output)
         # f.close()
+        # item['artificial_person'] = response.xpath('//*[@id="searchlist"]/ul/a[1]/span[2]/small[1]/text()[2]').extract()[0]
+        # item['year'] = response.xpath('//*[@id="searchlist"]/ul/a[1]/span[2]/small[1]/text()[3]').extract()[0]

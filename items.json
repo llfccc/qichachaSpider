@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
 [
 [
 [
@@ -7,3 +8,29 @@
 [
 [
 [
+=======
+{"company_name": "a", "registration_number": "330106000119806"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+{"company_name": "a", "registration_number": "330106000119806"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a"},
+{"annual": " 2015\u5e74\u5ea6\u62a5\u544a", "company_name": "a", "registration_number": "330106000119806"}
+][
+>>>>>>> origin/master

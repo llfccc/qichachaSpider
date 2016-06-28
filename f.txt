@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  				 
 	 <section class="panel b-a base_info">
 	   <div class="panel-heading b-b">
@@ -811,3 +812,6 @@
 		</footer>	   
 	  
 	</section>	 
+=======
+{}
+>>>>>>> origin/master

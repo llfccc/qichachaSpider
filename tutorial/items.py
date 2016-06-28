@@ -8,10 +8,9 @@
 import scrapy
 
 
-class DmozItem(scrapy.Item):
+class QichachaItem(scrapy.Item):
     company_name = scrapy.Field()
-    artificial_person = scrapy.Field()
-    year = scrapy.Field()
-    href = scrapy.Field()
-    registration_number = scrapy.Field()
-
+    artificial_person = scrapy.Field()  # 法人
+    href = scrapy.Field()  # 一级链接
+    registration_number = scrapy.Field()  # 注册号
+    annual = scrapy.Field()  # 最新年检信息

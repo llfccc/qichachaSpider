@@ -8,4 +8,10 @@
 
 class TutorialPipeline(object):
     def process_item(self, item, spider):
+        print ('start')
+        try:
+            if item['annual'] and item['registration_number']:
+                print 'PIPE', item
+        except:
+            pass
         return item
