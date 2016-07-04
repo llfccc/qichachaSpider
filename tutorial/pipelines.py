@@ -12,6 +12,6 @@ class TutorialPipeline(object):
         try:
             if item['annual'] and item['registration_number']:
                 print 'PIPE', item
+                return item
         except:
             pass
-        return item
