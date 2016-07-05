@@ -8,7 +8,7 @@
 import scrapy
 
 
-class QichachaItem(scrapy.Item):
+class CompanyItem(scrapy.Item):
     company_name = scrapy.Field()
     artificial_person = scrapy.Field()  # 法人
     href = scrapy.Field()  # 一级链接

@@ -1,0 +1,103 @@
+<!doctype html >
+<html xmlns:ng="http://angularjs.org" id="ng-app" class="ng-app:app" ng-app="app">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title ng-bind-html="title?title+'【天眼查】':'【天眼查】专业的企业工商信息查询!专业的发现人与企业关系的平台|企业信用查询|工商局企业信息查询'">【天眼查】专业的企业工商信息查询!专业的发现人与企业关系的平台|企业信用查询|工商局企业信息查询</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="description" content="{{description?description:'【天眼查】是一款服务于个人的企业工商数据信息查询系统.该系统拥有丰富的中国企业信息库,公开的法律诉讼信息库,丰富的注册商标库等多种数据库的企业信息查询.天眼查可实时提供工商注册信息、商标信息、对外投资信息、涉诉等信息查询,帮助用户及时全面了解企业经营和人员投资状况.同时,天眼查还提供体现企业经营状况的评分,帮助用户及时洞察企业经营信息全貌,提供北京、上海、广州、武汉、河南、河北、浙江、安徽、山东、湖南等全国企业工商信息查询,公司工商注册登记信息信用查询服务以及企业诉讼，商标和专利信息查询。'}}">
+<meta name="keywords" content="{{keywords?keywords:' 天眼查,工商局企业信息查询,工商局企业查询,工商局信息查询,企查查,企业信息查询,企业查询,企业信用,工商查询,企业信用查询,工商信息查询,红盾网,启信宝 '}}">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
+ <meta name="fragment" content="!">
+ <base href="/">
+ <!--[if lt IE 8]>
+ 	<script src="http://cache.tianyancha.com/js/update-browser.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="http://cache.tianyancha.com/wap/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://cache.tianyancha.com/wap/css/bootstrap.css">
+<link rel="stylesheet" href="http://cache.tianyancha.com/wap/resources/css/662d10431b74562b08d711dbac6ec9ff.css">
+
+ <!--[if lt IE 9]>
+ 	<link rel="stylesheet" href="http://cache.tianyancha.com/wap/resources/css/a6663741e41cb40dd68bb96ad342d6be.css">
+ 	<script src="http://cache.tianyancha.com/wap/js/respond.js"></script>
+<![endif]-->
+
+
+<!-- <script>!function(e,t,a,n,c,o,s){e["GoogleAnalyticsObject"]=c;e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date;o=t.createElement(a),s=t.getElementsByTagName(a)[0];o.async=1;o.src=n;s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-72598389-1","auto");</script> -->
+<script>!function(){for(var e,n=function(){},o=["assert","clear","count","debug","dir","dirxml","error","exception","group","groupCollapsed","groupEnd","info","log","markTimeline","profile","profileEnd","table","time","timeEnd","timeline","timelineEnd","timeStamp","trace","warn"],i=o.length,r=window.console=window.console||{};i--;){e=o[i];r[e]||(r[e]=n)}}();</script>
+
+
+<script src="http://cache.tianyancha.com/wap/resources/js/7cbbe1039e172161ad87fd1b3ee1e143.js"></script>
+
+<script src="http://api.map.baidu.com/api?v=2.0&ak=E1r6u1CD9SzZ08IxP32bNjgz"></script>
+</head>
+<body class="b-c13" ng-class="isFromMac ? '':'windows-modal'">
+<div id="loading" class="loading" loading></div>
+<div id="ng-view" ng-view></div>
+<script>var _hmt=_hmt||[];!function(){var e=navigator.userAgent;if(e.indexOf("ignore")<0){var t=document.createElement("script");t.src="//hm.baidu.com/hm.js?e92c8d65d92d534b0fc290df538b4758";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}();</script>   
+            
+<!-- <script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="//hm.baidu.com/hm.js?9c350b9e33b321dffebc9cc49db07828";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();</script> -->
+
+<!-- Piwik -->
+<script type="text/javascript">var _paq=_paq||[];_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking",!0]);!function(){var e="//tj.tianyancha.com/piwik/";_paq.push(["setTrackerUrl",e+"piwik.php"]);_paq.push(["setSiteId",1]);var a=document,p=a.createElement("script"),t=a.getElementsByTagName("script")[0];p.type="text/javascript";p.async=!0;p.defer=!0;p.src=e+"piwik.js";t.parentNode.insertBefore(p,t)}();</script>
+<noscript><p><img src="//tj.tianyancha.com/piwik/piwik.php?idsite=1" style="border:0;" alt=""></p></noscript>
+<!-- End Piwik Code -->
+
+<!-- banner -->
+<div ng-controller="bannerCtrl" class="bottom-banner">
+	<div class="bottom-banner-body" ng-if="isPCClient" ng-show="showBanner">
+		<img class="bottom-banner-content" alt="app下载" src="http://cache.tianyancha.com/wap/images/banner-bottom-iphone.png">
+		<div class="bottom-banner-qrcode">
+			<img class="bottom-banner-qrcode-img" alt="qrcode" src="http://cache.tianyancha.com/wap/images/banner-bottom-qrcode.png">
+		</div>
+		<img class="bottom-banner-close" alt="close" ng-click="ctrlBanner(false);" src="http://cache.tianyancha.com/wap/images/banner-bottom-close.png">
+	</div>
+	<img class="bottom-banner-min" ng-if="isPCClient" ng-show="!showBanner" alt="app下载" src="http://cache.tianyancha.com/wap/images/banner_smallV2.png" ng-click=" ctrlBanner(true);">
+</div>
+
+
+<!-- <div ng-cloak ng-controller="bannerCtrl" class="bottom-bannerV2 sm-s-hide">
+	<div class="body_leftV2" ng-if="isPCClient" ng-show="showBanner">
+		<div class="body_rightV2"></div>
+		<div class="content">
+			
+			<img src="http://cache.tianyancha.com/wap/images/bottom_bannerV2.png" class="body_mainV2">
+			<img class="bottom-banner-closeV2" ng-click="ctrlBanner(false);" alt="close" ng-mouseover="check2=true;" ng-mouseleave="check2=false;" ng-src="{{!check2 ? 'http://cache.tianyancha.com/wap/images/delete_nor_V2.png':'http://cache.tianyancha.com/wap/images/delete_hig_V2.png'}}">
+			
+		</div>
+	</div>
+	<img class="bottom-banner-min" ng-if="isPCClient" ng-show="!showBanner" alt="app下载" src="http://cache.tianyancha.com/wap/images/banner_smallV2.png" ng-click=" ctrlBanner(true);">
+</div> -->
+
+<!-- <div ng-controller="bannerCtrl" class="bottom-banner">
+	<div class="bottom-banner-main" ng-if="isPCClient">
+		<div class="bottom-banner-left" ng-show="showBanner">
+			<img class="" alt="app下载" src="http://cache.tianyancha.com/wap/images/banner-new.png">
+			<span ng-click="ctrlBanner(false);"></span>
+		</div>
+		<div class="bottom-banner-right" ng-show="showBannerRight" id="BannerRight">
+			<div class="bottom-banner-head">如何甄别信息的真假</div>
+			<div class="bottom-banner-bottom" ng-click="openVideo1()"><img class="" alt="app下载" src="http://cache.tianyancha.com/wap/images/video_cover_with_play.png"></div>
+			<span ng-click="ctrlBannerRight(false);"></span>
+		</div> 
+	</div>
+	<img class="bottom-banner-min" ng-if="isPCClient" ng-show="!showBanner" alt="app下载" src="http://cache.tianyancha.com/wap/images/banner_small.png" ng-click=" ctrlBanner(true);">
+</div> -->
+<!-- <div ng-if="!isPCClient" class="bottom-banner-mobile">
+	<img alt="下载天眼查专业版APP" src="http://cache.tianyancha.com/wap/images/bottom-banner-mobile-content1.png">
+    <a href="http://app.tianyancha.com?source=wap" target="_blank">
+    	<img alt="下载天眼查专业版APP" src="http://cache.tianyancha.com/wap/images/bottom-banner-mobile-down.png">
+    
+    </a>
+</div> -->
+<a ng-if="!isPCClient&&!isTYCClient" class="bottom-banner-mobile" href="http://app.tianyancha.com?source=wap" target="_blank">
+	<img alt="下载天眼查专业版APP" src="http://cache.tianyancha.com/wap/images/bottom-banner-mobile-content2.png">
+    <span>
+    	<img alt="下载天眼查专业版APP" src="http://cache.tianyancha.com/wap/images/bottom-banner-mobile-down1.png">
+    </span>
+</a>
+</body>
+</html>
+<!--coolie build-->
